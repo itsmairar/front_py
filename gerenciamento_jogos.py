@@ -6,10 +6,19 @@ from tkinter import messagebox
 
 window = tk.Tk()
 
-imagem = tk.PhotoImage(file="image.png")
-w = tk.Label(window, image=imagem)
-w.imagem = imagem
-w.pack()
+window.title('Copa do mundo')
+window.geometry('500x300')
+window.configure(background="#ffffff")
+
+#w = oeste
+Label(window,text='Gerenciamento de partidas', background='#ffffff', foreground='#009', anchor=W).place(x=10, y=10, width=200, height=20)
+
+# imagem = tk.PhotoImage(file="image.png")
+# w = tk.Label(window, image=imagem)
+# window.configure(background='white')
+# window.attributes('-alpha', 0.9)
+# w.imagem = imagem
+# w.pack()
 
 #funcoes dos botoes 
 def saudacao(event=None):
