@@ -1,13 +1,22 @@
 import tkinter as tk
 from tkinter import *
 from tkinter import messagebox
-
+ 
 root = tk.Tk()
 
-imagem = tk.PhotoImage(file="image.png")
-w = tk.Label(root, image=imagem)
-w.imagem = imagem
-w.pack()
+root.title('Copa do mundo')
+root.geometry('500x300')
+root.configure(background="#ffffff")
+
+#w = oeste
+Label(root,text='Cadastro', background='#ffffff', foreground='#009', anchor=W).place(x=10, y=10, width=100, height=20)
+
+# imagem = tk.PhotoImage(file="image.png")
+# w = tk.Label(root, image=imagem)
+# root.configure(background='white')
+# root.attributes('-alpha', 0.9)
+# w.imagem = imagem
+# w.pack()
 
 #funcoes dos botoes 
 def saudacao(event=None):
