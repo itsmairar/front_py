@@ -2,13 +2,23 @@
 import tkinter as tk
 from tkinter import *
 from tkinter import messagebox
-
+ 
 window = tk.Tk()
 
-imagem = tk.PhotoImage(file="image.png")
-w = tk.Label(window, image=imagem)
-w.imagem = imagem
-w.pack()
+window.title('Copa do mundo')
+window.geometry('500x300')
+window.configure(background="#ffffff")
+
+#w = oeste
+Label(window,text='Cadastro das oitavas de final', background='#ffffff', foreground='#009', anchor=W).place(x=10, y=10, width=200, height=30)
+
+# imagem = tk.PhotoImage(file="image.png")
+# w = tk.Label(window, image=imagem)
+# window.configure(background='white')
+# window.attributes('-alpha', 0.9)
+# w.imagem = imagem
+# w.pack()
+
 #funcoes dos botoes 
 def saudacao(event=None):
    messagebox.showinfo("Insert","Registro efetuado com sucesso!!!")
@@ -54,6 +64,7 @@ log_lc = Entry(left_frame, font=('Times', 14))
 log_dt = Entry(left_frame, font=('Times', 14))
 log_ge = OptionMenu(left_frame, variable, *gender)
 
+
 #botoes
 confirmar_btn = Button(left_frame, width=10, text='Cadastrar', font=('Times', 14), command=saudacao)
 excluir_btn = Button(left_frame, width=10, text='Excluir', font=('Times', 14), command=excluir)
@@ -68,6 +79,7 @@ log_op.grid(row=4, column=1, pady=10, padx=20)
 log_lc.grid(row=5, column=1, pady=10, padx=20)
 log_dt.grid(row=6, column=1, pady=10, padx=20)
 log_ge.grid(row=7, column=1, pady=10, padx=20)
+
 
 #botopes config
 confirmar_btn.grid(row=11, column=4, pady=10, padx=25)
