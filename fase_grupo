@@ -7,15 +7,7 @@ from tkinter import messagebox
 window = tk.Tk()
 window.title('Copa do mundo')
 window.geometry('500x300')
-window.configure(background="#ffffff")
 
-#w = oeste
-Label(window,text='Fase de grupo', background='#ffffff', foreground='#009', anchor=W).place(x=10, y=10, width=100, height=20)
-# txt = Label(text='Fase de grupo')
-# width=25,
-# height=5
-# window.geometry("800x100")
-# txt.pack()
 
 
 #funcoes dos botoes 
@@ -25,8 +17,6 @@ def saudacao(event=None):
 def excluir(event=None):
    messagebox.askyesno("Delete","Deseja Excluir os dados?")
 
-
-
 window.title('Copa do Mundo')
 
 #chamada das opcoes 
@@ -35,8 +25,6 @@ gender = ('A', 'B', 'C', 'D', 'E', 'F','G','H')
 variable.set(gender[0])
 
 #Principal
-
-
 window.geometry('940x800')
 
 
@@ -49,12 +37,17 @@ Label(left_frame, text="Digite o nome da equipe", font=('Times', 14)).grid(row=0
 Label(left_frame, text="Partidas vencidas ", font=('Times', 14)).grid(row=1, column=0, pady=10)
 Label(left_frame, text="Quantidade de gols", font=('Times', 14)).grid(row=2, column=0, pady=10)
 Label(left_frame, text="Grupo", font=('Times', 14)).grid(row=6, column=0, sticky=W, pady=10)
+Label(text="Fase de grupo", font=('Times', 40)).grid(row=4, column=5, sticky=W, pady=10, padx=700)
+
+
+#Label(window,text='Fase de grupo', background='#008000', foreground='#009', anchor=W).grid(x=10, y=10, width=100, height=20)
 
 #atribuicoes dos inputs e configs
 log_eq = Entry(left_frame, font=('Times', 14))
 log_te = Entry(left_frame, font=('Times', 14))
 log_ar = Entry(left_frame, font=('Times', 14))
 log_ge = OptionMenu(left_frame, variable, *gender)
+
 
 #botoes
 confirmar_btn = Button(left_frame, width=10, text='Cadastrar', font=('Times', 14), command=saudacao)

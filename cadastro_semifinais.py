@@ -7,10 +7,7 @@ window = tk.Tk()
 
 window.title('Copa do mundo')
 window.geometry('500x300')
-window.configure(background="#ffffff")
 
-#w = oeste
-Label(window,text='Cadastro para a semifinal', background='#ffffff', foreground='#009', anchor=W).place(x=10, y=10, width=100, height=20)
 
 # imagem = tk.PhotoImage(file="image.png")
 # w = tk.Label(window, image=imagem)
@@ -53,6 +50,7 @@ Label(left_frame, text="Gols da equipe oponente", font=('Times', 14)).grid(row=4
 Label(left_frame, text="Local", font=('Times', 14)).grid(row=5, column=0, pady=10)
 Label(left_frame, text="Data", font=('Times', 14)).grid(row=6, column=0, pady=10)
 Label(left_frame, text="Grupo", font=('Times', 14)).grid(row=7, column=0, sticky=W, pady=10)
+Label(text="Semifinais", font=('Times', 40)).grid(row=4, column=5, sticky=W, pady=10, padx=700)
 
 #atribuicoes dos inputs e configs
 log_co = Entry(left_frame, font=('Times', 14))

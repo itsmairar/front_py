@@ -6,10 +6,8 @@ root = tk.Tk()
 
 root.title('Copa do mundo')
 root.geometry('500x300')
-root.configure(background="#ffffff")
 
-#w = oeste
-Label(root,text='Cadastro', background='#ffffff', foreground='#009', anchor=W).place(x=10, y=10, width=100, height=20)
+
 
 # imagem = tk.PhotoImage(file="image.png")
 # w = tk.Label(root, image=imagem)
@@ -43,6 +41,7 @@ left_frame = Frame(root, bd=3, relief=SOLID, padx=80, pady=24)
 Label(left_frame, text="Digite o nome da equipe", font=('Times', 14)).grid(row=0, column=0, sticky=W, pady=10)
 Label(left_frame, text="Digite o nome do técnico", font=('Times', 14)).grid(row=1, column=0, pady=10)
 Label(left_frame, text="Digite o nome do árbitro", font=('Times', 14)).grid(row=2, column=0, pady=10)
+Label(text="Cadastramento das equipes", font=('Times', 40)).grid(row=4, column=5, sticky=W, pady=10, padx=700)
 
 #atribuicoes dos inputs e config
 log_eq = Entry(left_frame, font=('Times', 14))
